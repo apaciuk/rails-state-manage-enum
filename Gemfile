@@ -16,10 +16,6 @@ gem "online_migrations"
 ### Encryption and Security
 gem "rack-attack"
 
-### I18n
-gem "i18n-tasks"
-gem "rails-i18n"
-
 ### Caching
 gem "identity_cache"
 gem "cityhash"
@@ -36,9 +32,8 @@ gem "rails_semantic_logger"
 gem "tzinfo-data", platforms: %i[mingw mswin x64_mingw jruby]
 
 group :development, :test do
+  gem 'rufo', '~> 0.13.0'
   gem "debug", platforms: %i[mri mingw x64_mingw]
-  gem "standard"
-
   gem "bullet"
   gem "capybara"
   gem "database_cleaner"
